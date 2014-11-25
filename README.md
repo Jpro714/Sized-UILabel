@@ -5,7 +5,7 @@ UILabel Category adding automatic sizing and easier positioning for creating UIL
 
 Installation
 =============
-Just add the "UILabel + SizedLabel.h" and "UILabel + SizedLabl.m" files to your project.\n
+Just add the "UILabel + SizedLabel.h" and "UILabel + SizedLabel.m" files to your project.
 Then import with #import "UILabel + SizedLabel.h"
 
 Usage
@@ -19,4 +19,8 @@ Allows you to create a new UILabel with its origin point set to the startPoint.
 
 -(id)initWithText_sl:(NSString *)text startX:(CGFloat)xVal xStartType:(START_POINT_TYPE_SL)xStartType startY:(CGFloat)yVal yStartType:(START_POINT_TYPE_SL)yStartType font:(UIFont *)font textColor:(UIColor *)textColor
 
-Allows you more control over how the label will be positioned. 
+Allows you more control over how the label will be positioned.
+-Pass BEGIN_SL to the xStartType or yStartType parameter to have the UILabel's frame begin at this point (either x or y).
+-Pass CENTER_SL to have the UILabel centered at this point (either on the x or y axis)
+-Pass END_SL to have the UILabel frame end at this point (x or y)
+
